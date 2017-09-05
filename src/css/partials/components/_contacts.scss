@@ -1,0 +1,83 @@
+.contacts{
+  padding-bottom: 30px;
+  &__title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 25px 0 25px;
+    line-height: (47/36);
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      height: 3px;
+      width: 70px;
+      background-color: $blue;
+    }
+  }
+  &__address{
+    padding: 10px 0 20px 40px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 22px;
+      height: 30px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../img/placeholder.svg);
+    }
+  }
+  &__tel{
+    padding: 10px 0 20px 40px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../img/phone.svg);
+    }
+  }
+  &__email{
+    padding: 10px 0 20px 40px;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 30px;
+      height: 22px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../img/mail.svg);
+    }
+  }
+  &__office{
+    strong, span, a{
+      display: block;
+    }
+    strong{
+      font-size: 18px;
+    }
+  }
+
+
+  &__map{
+    background-color: red;
+    height: 450px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,41 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--contacts
+
+    // Breadcrumbs
+    +b.SECTION.breadcrumbs
+      .container
+        +e.inner
+          span Контакты
+
+    // Contacts
+    +b.SECTION.contacts
+      .container
+        +e.H1.title Контакты
+        .row
+          .col-xs-12.col-md-5
+            +e.office
+              +e.address
+                strong Адрес:
+                span ФГБУ «СПМЦ» Минздрава России:
+                span набережная реки Фонтанки д. 154
+              +e.tel
+                strong Телефон:
+                a(href="tel:88129816747", target="_blank") 8 (812) 981 67 47
+                a(href="tel:89500389374", target="_blank") 8 (950) 038 93 74
+              +e.email
+                strong Почта:
+                a(href="orto.piter@mail.ru", target="_blank") orto.piter@mail.ru
+            +e.info
+              h3 Как добраться до ФГБУ «СПМЦ» Минздрава России:
+              p Ближайшее метро м.Нарвская, далее автобус 2,6 или маршрутное такси 2,154,195,306,1 остановка пересечение старо-петергофского проспекта и наб.реки Фонтанки. м.Сенная Площадь, далее маршрутное такси 212 или автобус 49,181 остановка наб. реки Фонтанки.
+          .col-xs-12.col-md-7
+            +e.map
+
+
+
+
+
+
+

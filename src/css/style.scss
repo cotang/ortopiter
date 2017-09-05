@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+// 3rd party
+@import "partials/abstracts/variables";
+@import "partials/abstracts/bootstrap-flex";
+@import "vendor/normalize";
+// @import "vendor/mq";
+@import "vendor/slick";
+
+// Abstracts
+@import "partials/abstracts/mixins";
+@import "partials/abstracts/png-sprite";
+
+// Base
+// @import "partials/base/typography";
+@import "partials/base/template";
+
+// Components
+@import "partials/components/header";
+@import "partials/components/btn";
+@import "partials/components/promo";
+@import "partials/components/services";
+@import "partials/components/about";
+@import "partials/components/reviews-rehab";
+@import "partials/components/info";
+@import "partials/components/footer";
+
+
+// @import "partials/components/overlay";
+@import "partials/components/page-pagination";
+@import "partials/components/breadcrumbs";
+@import "partials/components/cat";
+
+
+
+@import "partials/components/not-found";
+@import "partials/components/contacts";
+@import "partials/components/reviews-page";
+@import "partials/components/content";
+
+
+

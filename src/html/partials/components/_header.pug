@@ -1,0 +1,54 @@
+include ../abstracts/bemto/bemto.pug
+
+// Header
++b.HEADER.header
+
+  +e.contacts
+    .container
+      +e.contacts-wrapper
+        +e.work Врач травматолог-ортопед
+        +e.address Набережная реки Фонтанки д.154
+        +e.A.email(href="mailto:orto.piter@mail.ru", target="_blank") orto.piter@mail.ru
+        +e.A.tel(href="tel:88129816747", target="_blank") 8 (812) 981 67 47
+
+
+  +e.inner
+    .container
+      +e.inner-wrapper
+        +e.logo
+          // Logo
+          +b.A.logo(href="index.html")
+            img(src="img/orto-piter1.png", alt="Врач травматолог-ортопед", title="Акулаев Антон Андреевич Врач травматолог-ортопед")
+
+        +e.work-inner Врач травматолог-ортопед
+
+        +e.nav
+          // Nav
+          +b.NAV.nav
+            +e.UL.list
+              li.menu-item.current-menu-item
+                a(href="index.html") Главная
+              li.menu-item
+                a(href="category.html") Медицинский центр
+              li.menu-item
+                a(href="category.html") Заболевания
+              li.menu-item
+                a(href="category.html") Полезная информация
+              li.menu-item
+                a(href="category.html") Ребилитация
+              li.menu-item
+                a(href="page-reviews.html") Отзывы
+              li.menu-item
+                a(href="page-contacts.html") Контакты
+            +e.hamburger
+              +b.A.hamburger(href="#")
+
+        +e.btn
+          +b.A.btn(href="#", data-form='appointment') Записаться на прием
+
+  +e.mobile
+    .container
+      +e.mobile-inner
+        +e.A.tel-mobile(href="tel:88129816747", target="_blank") 8 (812) 981 67 47
+        +e.btn-mobile
+          +b.A.btn(href="#", data-form='appointment') Записаться на прием

@@ -1,0 +1,14 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--404
+
+    // Not found
+    +b.SECTION.not-found
+      .container
+        +e.H1.title Запрашиваемая вами страница не найдена
+        +e.text Попробуйте найти необходимую вам услугу через каталог услуг или позвоните по телефонам
+          a(href="tel:88129816747", target="_blank") 8 (812) 981 67 47
+          a(href="tel:89500389374", target="_blank") 8 (950) 038 93 74
+        +e.btn
+          +b.A.btn(href="#", data-form='appointment') Записаться на прием

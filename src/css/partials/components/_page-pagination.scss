@@ -1,0 +1,24 @@
+.page-pagination{
+  padding: 30px 0 30px;
+  text-align: right;
+  .screen-reader-text{
+    display: none;
+  }
+
+  .page-numbers{
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #d0d0d0;
+  }
+  .page-numbers.current{
+    color: white;
+    background-color: $blue;
+    border: 1px solid $blue;
+  }
+
+
+}

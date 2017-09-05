@@ -1,0 +1,48 @@
+.btn{
+  display: inline-block;
+  text-align: center;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid $blue;
+  padding: 10px 25px;
+  margin: 0;
+  color: $text-color;
+  &:hover, &:focus, &:active{
+    color: $text-white;
+    background-color: $blue;
+  }
+
+  &--text-white{
+    color: $text-white;
+  }
+
+  &--more{
+    padding: 7px 40px 7px 25px;
+    border-color: $grey;
+    position: relative;
+    &:before, &:after{
+      content: '';
+      background-color: $grey;
+      height: 1px;
+      width: 12px;
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform-origin: center right;
+      @include transition();
+    }
+    &:before{
+      transform: rotate(45deg);
+    }
+    &:after{
+      transform: rotate(-45deg);
+    }
+    &:hover, &:focus, &:active{
+      border-color: $white;
+      &:before, &:after{
+        background-color: $white;
+      }
+    }
+  }
+}
+

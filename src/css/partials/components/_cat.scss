@@ -1,0 +1,46 @@
+.cat{
+  &__title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 25px 0 25px;
+    line-height: (47/36);
+    position: relative;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      height: 3px;
+      width: 70px;
+      background-color: $blue;
+    }
+  }
+  &__list{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+}
+.cat-item{
+  padding: 40px 0;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: calc(100% - 30px);
+    left: 15px;
+    bottom: 0;
+    background-color: #d0d0d0;
+  }
+  &__title{
+    margin: 0 0 20px;
+  }
+  &__btn{
+    padding-top: 40px;
+    @media (max-width: $breakpoint-xl){
+      padding-top: 20px;
+    }
+  }
+}

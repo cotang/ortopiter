@@ -1,0 +1,57 @@
+extends partials/templates/_template.pug
+
+block content
+  +b.SECTION.page--reviews
+
+    // Breadcrumbs
+    +b.SECTION.breadcrumbs
+      .container
+        +e.inner
+          span
+            a(href="#") Главная
+          span Отзывы
+
+    // Reviews
+    +b.SECTION.reviews-page
+      .container
+        +e.inner
+          +e.btn
+            +b.A.btn(href="#", data-form='appointment') Оставить свой отзыв
+          +e.H1.title Отзывы
+          +e.description Что о нас говорят клиенты
+          +e.UL.list
+            +b.reviews-page-item
+              +e.img
+                img(src="img/1797_orig.jpg", alt="")
+                +e.before-after
+              +e.text-wrapper
+                +e.text Хочу выразить сердечную благодарность замечательному доктору Акулаеву Антону Андреевичу!!! Всему медперсоналу,анастезиологу,и медсестре Татьяне за её терпение и внимательность! Я очень счастлива,что оперировалась у Антона Андреевича! Спасибо Вам огромное за успешно проведенную операцию по исправлению Hallux Valgus! Здоровья,счастья Вам и Вашим семьям! Успехов в работе!
+                +e.name Мария Иванова
+            +b.reviews-page-item
+              +e.img
+                img(src="img/1797_orig.jpg", alt="")
+                +e.before-after
+              +e.text-wrapper
+                +e.text Хочу выразить сердечную благодарность замечательному доктору Акулаеву Антону Андреевичу!!! Всему медперсоналу,анастезиологу,и медсестре Татьяне за её терпение и внимательность! Я очень счастлива,что оперировалась у Антона Андреевича! Спасибо Вам огромное за успешно проведенную операцию по исправлению Hallux Valgus! Здоровья,счастья Вам и Вашим семьям! Успехов в работе!
+                +e.name Мария Иванова
+            +b.reviews-page-item
+              +e.img
+                img(src="img/1797_orig.jpg", alt="")
+                +e.before-after
+              +e.text-wrapper
+                +e.text Хочу выразить сердечную благодарность замечательному доктору Акулаеву Антону Андреевичу!!! Всему медперсоналу,анастезиологу,и медсестре Татьяне за её терпение и внимательность! Я очень счастлива,что оперировалась у Антона Андреевича! Спасибо Вам огромное за успешно проведенную операцию по исправлению Hallux Valgus! Здоровья,счастья Вам и Вашим семьям! Успехов в работе!
+                +e.name Мария Иванова
+
+            +b.page-pagination
+              nav.navigation.pagination(role='navigation')
+                .nav-links
+                  span.page-numbers.current 1
+                  a.page-numbers(href='#') 2
+                  a.page-numbers(href='#') 3
+                  a.page-numbers(href='#') 4
+                  a.page-numbers(href='#') 5
+                  span.page-numbers.dots …
+                  a.page-numbers(href='#') 44
+
+
+

@@ -1,0 +1,78 @@
+.footer{
+  background-color: $grey-bg;
+  color: $text-white;
+  @media (max-width: $breakpoint-xl){
+    text-align: center;
+  }
+  .col-xs-12{
+    @media (max-width: $breakpoint-md){
+      padding-bottom: 20px;
+      border-bottom: 1px solid #6d7682;
+    }
+  }
+
+  &__title{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  &__tel{
+    margin-bottom: 8px;
+    display: block;
+    letter-spacing: 0.05em;
+    color: $text-white;
+    &:before{
+      content: '';
+      display: inline-block;
+      margin-right: 5px;
+      width: 15px;
+      height: 15px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../img/phone-receiver.svg);
+    }
+  }
+  &__email{
+    display: block;
+    letter-spacing: 0.05em;
+    color: $text-white;
+    &:before{
+      content: '';
+      display: inline-block;
+      margin-right: 5px;
+      width: 17px;
+      height: 13px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../img/close-envelope.svg);
+    }
+  }
+
+  &__appointment{
+    text-align: center;
+  }
+
+  &__text{
+    font-size: 12px;
+    line-height: (16/12);
+  }
+  &__btn{
+    padding-top: 25px;
+  }
+  &__law{
+    font-size: 10px;
+    line-height: (16/10);
+    padding-bottom: 25px;
+  }
+  &__copyright{
+    padding: 12px 0;
+    border-top: 1px solid #6d7682;
+  }
+  &__copyright-text{
+    font-size: 12px;
+    line-height: (16/12);
+  }
+
+}
